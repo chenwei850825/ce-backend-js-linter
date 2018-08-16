@@ -8,8 +8,8 @@ then
 fi
 
 GIT_HOOK_DIR=${WORKSPACE}/.git/hooks
-CONFIG_URL="https://raw.github.com/intowow/ce-backend-js-linter/master/eslintrc.yaml"
-PRECOMMIT_SCRIPTS="https://raw.github.com/intowow/ce-backend-js-linter/master/git_hooks/pre-commit"
+CONFIG_URL="https://raw.github.com/chenwei850825/ce-backend-js-linter/master/eslintrc.yaml"
+PRECOMMIT_SCRIPTS="https://raw.github.com/chenwei850825/ce-backend-js-linter/master/git_hooks/pre-commit"
 
 echo -e "\033[32mStart to install ESLint...\033[0m"
 
