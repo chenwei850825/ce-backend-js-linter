@@ -22,3 +22,7 @@ chmod +x ${GIT_HOOK_DIR}/pre-commit
 
 # Finished
 echo -e "\033[32mESLint installed.\033[0m"
+
+# Jump to git root dir
+pushd ${WORKSPACE}
+yarn add eslint@^4.19.1 https://github.com/chenwei850825/js-linter-test/ eslint-plugin-import@^2.14.0
