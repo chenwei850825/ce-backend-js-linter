@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "sh postinstall.sh"
   },
+  "dependencies": {
+    "eslint-config-i2w_test-airbnb-base": "git+https://github.com/chenwei850825/eslint-config-i2w_test-airbnb-base.git"
+  },
   "author": "yuxun@intowow.com"
 }
