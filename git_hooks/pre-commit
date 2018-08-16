@@ -23,8 +23,10 @@ then
   exit 1
 fi
 
+localEslintrc=$(find -name .eslintrc.yaml)
+
 # Run ESLint
-$localEslint -c .eslintrc.yaml "${DIFF_FILES[@]}"
+$localEslint -c $localEslintrc "${DIFF_FILES[@]}"
 ESLINT_EXIT="$?"
 
 # Back to original dir
