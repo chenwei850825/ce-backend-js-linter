@@ -13,7 +13,7 @@ fi
 pushd ${GIT_HOME}
 
 
-localEslint=$(find */.bin -name eslint)
+localEslint=$(find -path "*node_modules/.bin/eslint" -print -quit)
 # Is eslint installed?
 which $localEslint > /dev/null
 if [ $? -ne 0 ];
