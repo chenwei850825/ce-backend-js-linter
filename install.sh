@@ -26,4 +26,3 @@ chmod +x ${GIT_HOOK_DIR}/pre-commit
 # Finished
 echo -e "\033[32mESLint installed.\033[0m"
 
-yarn global add eslint@^4.19.1 eslint-config-i2w_test-airbnb-base eslint-plugin-import@^2.14.0
