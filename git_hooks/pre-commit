@@ -12,8 +12,10 @@ fi
 # Jump to git root dir
 pushd ${GIT_HOME}
 
+
+localEslint=$(find */.bin -name eslint)
 # Is eslint installed?
-which eslint > /dev/null
+which localEslint > /dev/null
 if [ $? -ne 0 ];
 then
   echo -e "\033[41;37mPlease install ESLint:\033[0m"
@@ -22,7 +24,7 @@ then
 fi
 
 # Run ESLint
-eslint -c .eslintrc.yaml "${DIFF_FILES[@]}"
+localEslint -c .eslintrc.yaml "${DIFF_FILES[@]}"
 ESLINT_EXIT="$?"
 
 # Back to original dir
