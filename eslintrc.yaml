@@ -1,5 +1,5 @@
 ---
-extends: airbnb-base
+extends: eslint-config-i2w_test-airbnb-base
 
 rules:
   key-spacing: off
