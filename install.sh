@@ -23,5 +23,7 @@ wget ${PRECOMMIT_SCRIPTS} -P ${GIT_HOOK_DIR}/
 # Make script executable
 chmod +x ${GIT_HOOK_DIR}/pre-commit
 
+yarn global add eslint@^4.19.1 eslint-config-i2w_test-airbnb-base eslint-plugin-import@^2.14.0
+
 # Finished
 echo -e "\033[32mESLint installed.\033[0m"
