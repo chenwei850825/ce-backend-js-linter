@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "sh postinstall.sh && yarn add eslint@^4.19.1 https://github.com/chenwei850825/js-linter-test/ eslint-plugin-import@^2.14.0"
+    "postinstall": "yarn add eslint@^4.19.1 https://github.com/chenwei850825/js-linter-test/ eslint-plugin-import@^2.14.0 && sh postinstall.sh"
   },
   "author": "yuxun@intowow.com"
 }
