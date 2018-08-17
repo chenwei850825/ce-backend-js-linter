@@ -13,7 +13,7 @@ fi
 pushd ${GIT_HOME}
 
 
-localEslint=$(find -path "*node_modules/.bin/eslint" -print -quit)
+localEslint=$(find -path "*/eslint-config-i2w_test-airbnb-base/node_modules/.bin/eslint" -print -quit)
 # Is eslint installed?
 which $localEslint > /dev/null
 if [ $? -ne 0 ];
